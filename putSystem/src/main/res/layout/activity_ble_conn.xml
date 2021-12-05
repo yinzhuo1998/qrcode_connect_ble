@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manong.putSystem.activity.BleConnActivity"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <Button
+        android:id="@+id/ble_conn_sacnning_ble"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="扫   描"/>
+
+
+    <TextView
+        android:id="@+id/ble_conn_tip"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="12sp"
+        android:text="未发现蓝牙设备, 请确认设备电源已打开"
+        android:textColor="@color/backgroundcolor"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arc_border"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/deviceListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="@color/grey"
+            android:dividerHeight="5dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
